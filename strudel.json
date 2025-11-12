@@ -1,13 +1,6 @@
 {
-  "_base": "./",
+  "_base": "https://raw.githubusercontent.com/ugamochi/strudel-samples/main/",
   "breaks": [
-    "br1.wav",
-    "br2.wav",
-    "br3.wav",
-    "br4.wav",
-    "br5.wav"
-  ],
-  "br": [
     "br1.wav",
     "br2.wav",
     "br3.wav",

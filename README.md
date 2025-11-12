@@ -1,19 +1,22 @@
 # Strudel Samples
 
-Custom breakbeat pack for Strudel. Load them via:
+Breakbeat pack for Strudel. Load it in two ways:
 
 ```javascript
+await samples('https://raw.githubusercontent.com/ugamochi/strudel-samples/main/br/strudel.json')
+// or the root map (kept for compatibility)
 await samples('https://raw.githubusercontent.com/ugamochi/strudel-samples/main/strudel.json')
 ```
 
-Then trigger loops like:
+Trigger loops:
 
 ```javascript
-s('br:0').loopAt(1)
-s('br:3').scrub('<0 0.25 0.5 0.75>').fit()
+s('br:0').loopAt(1)   // br1.wav
+s('br1').fit()        // alias to br1.wav
+s('br1/2').loopAt(1)  // alias to br2.wav for slash-friendly code
 ```
 
-Files included:
+Files live under `/br`:
 - `br1.wav`
 - `br2.wav`
 - `br3.wav`

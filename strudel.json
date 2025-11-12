@@ -1,5 +1,5 @@
 {
-  "_base": "./br/",
+  "_base": "./strudel-samples/",
   "br": [
     "br1.wav",
     "br2.wav",
@@ -12,4 +12,6 @@
   "br3": ["br3.wav"],
   "br4": ["br4.wav"],
   "br5": ["br5.wav"],
+  "br1/2": ["br2.wav"],
+  "br1/4": ["br4.wav"]
 }

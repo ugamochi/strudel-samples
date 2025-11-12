@@ -1,6 +1,6 @@
 # Strudel Samples
 
-Five breakbeats packaged for Strudel. Load them via:
+Breakbeats and a pad texture packaged for Strudel. Load them via:
 
 ```javascript
 await samples('github:ugamochi/strudel-samples')
@@ -9,9 +9,8 @@ await samples('github:ugamochi/strudel-samples')
 Usage examples:
 
 ```javascript
-s('breaks:0').loopAt(1)   // br1.wav
-s('br:1').fit()           // br2.wav (alias bank)
-s('breaks:2').scrub('<0 0.25 0.5 0.75>').fit()
+s('breaks/0').loopAt(1)   // br1.wav
+s('pad/0').slow(4)        // star-pad-vox pad
 ```
 
 Files in this pack:
@@ -20,3 +19,4 @@ Files in this pack:
 - `br3.wav`
 - `br4.wav`
 - `br5.wav`
+- `star-pad-vox.wav`

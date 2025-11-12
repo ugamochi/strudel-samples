@@ -6,5 +6,8 @@
     "br3.wav",
     "br4.wav",
     "br5.wav"
+  ],
+  "pad": [
+    "star-pad-vox.wav"
   ]
 }

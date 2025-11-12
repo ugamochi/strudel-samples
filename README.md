@@ -1,19 +1,20 @@
 # Strudel Samples
 
-Breakbeat pack for Strudel. Load it in two ways:
+Breakbeat pack for Strudel. Load whichever map you need:
 
 ```javascript
-await samples('https://raw.githubusercontent.com/ugamochi/strudel-samples/main/br/strudel.json')
-// or the root map (kept for compatibility)
-await samples('https://raw.githubusercontent.com/ugamochi/strudel-samples/main/strudel.json')
+await samples('github:ugamochi/strudel-samples')        // full pack (br + aliases)
+await samples('github:ugamochi/strudel-samples/br')     // same as above, scoped to /br
+await samples('github:ugamochi/strudel-samples/br1')    // just br1.wav
+await samples('github:ugamochi/strudel-samples/br2')    // just br2.wav (also alias br1/2)
 ```
 
 Trigger loops:
 
 ```javascript
-s('br:0').loopAt(1)   // br1.wav
+s('br:0').loopAt(1)   // br1.wav from the pack map
 s('br1').fit()        // alias to br1.wav
-s('br1/2').loopAt(1)  // alias to br2.wav for slash-friendly code
+s('br1/2').loopAt(1)  // alias to br2.wav
 ```
 
 Files live under `/br`:
